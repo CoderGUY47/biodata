@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+    <title>Bio-Data Form</title>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <h2>Enter Your Bio-Data</h2>
+        <form action="index.php" method="POST">
+          <div>
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Write your full name">
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" placeholder="you@example.com">
+          </div>
+          <div>
+            <label for="mobile">Mobile</label>
+            <input type="text" id="mobile" name="mobile" placeholder="+99 123 4567">
+          </div>
+          <div>
+            <label for="occupation">Occupation</label>
+            <input type="text" id="occupation" name="occupation" placeholder="student, engineer, doctor, etc.">
+          </div>
+          <div>
+            <label for="nationality">Nationality</label>
+            <input type="text" id="nationality" name="nationality" placeholder="Bengali, Indian, Pakistani, etc.">
+          </div>
+          <div>
+            <label>Marital Status</label>
+            <div class="radio-group">
+              <label><input type="radio" name="marital" value="Single"> Single</label>
+              <label><input type="radio" name="marital" value="Married"> Married</label>
+              <label><input type="radio" name="marital" value="Divorced"> Divorced</label>
+            </div>
+          </div>
+          <div>
+            <label for="website">Website</label>
+            <input type="text" id="website" name="website" placeholder="https://biodata.com">
+          </div>
+          <div>
+            <label for="comment">Comment</label>
+            <textarea id="comment" name="comment" rows="5" cols="40" placeholder="Write your comment"></textarea>
+          </div>
+          <div>
+            <label>Gender</label>
+            <div class="radio-group">
+              <label><input type="radio" name="gender" value="female"> Female</label>
+              <label><input type="radio" name="gender" value="male"> Male</label>
+              <label><input type="radio" name="gender" value="other"> Other</label>
+            </div>
+          </div>
+          <div class="actions">
+            <input type="submit" value="Submit">
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
